@@ -1,3 +1,5 @@
+import java.util.*
+
 fun main(){
     introduction("Tabitha",19)
     dispensor(5)
@@ -8,9 +10,8 @@ fun main(){
     var person=Human("Daphne",19,50.5)
     person.eat(5)
     person.speak("whats poppin?")
-
     comparison(54,57)
-    println(list("Aisha","Kuzon","Haduja","Kenzi","Walt"))
+    println(println(Arrays.toString(list("Aisha","Kuzon","Haduja","Kenzi","Walt"))))
 }
 fun introduction(name:String,age:Int){
     println("My name is $name and I am $age years old.")
@@ -65,5 +66,6 @@ fun comparison(num3: Int,num4:Int){
 //}
 fun list(a:String,b:String,c:String,d:String,e:String):Array<String>{
     var x= arrayOf(a,b,c,d,e)
+
     return x
 }
